@@ -4,7 +4,6 @@ import {
   StyleSheet,
   View,
   ActivityIndicator,
-  AsyncStorage,
   Dimensions,
   Platform,
   AppState,

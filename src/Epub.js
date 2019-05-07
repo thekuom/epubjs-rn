@@ -4,11 +4,11 @@ import {
   StyleSheet,
   View,
   ActivityIndicator,
-  AsyncStorage,
   Dimensions,
   AppState,
   WebView
 } from "react-native";
+import AsyncStorage from '@react-native-community/async-storage';
 
 import Orientation from "react-native-orientation";
 

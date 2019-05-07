@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {
+  ImageBackground,
   AppRegistry,
   StyleSheet,
   Text,
@@ -19,7 +20,7 @@ class EpubReader extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      flow: "paginated", // paginated || scrolled-continuous
+      flow: "scrolled", // paginated || scrolled-continuous
       location: 6,
       url: "https://s3.amazonaws.com/epubjs/books/moby-dick.epub",
       src: "",
@@ -62,6 +63,8 @@ class EpubReader extends Component {
         <StatusBar hidden={!this.state.showBars}
           translucent={true}
           animated={false} />
+        <ImageBackground source={{uri: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'}} style={{ height: '30%', width: '100%' }}>
+        </ImageBackground>
         <Epub style={styles.reader}
               ref="epub"
               //src={"https://s3.amazonaws.com/epubjs/books/moby-dick.epub"}
